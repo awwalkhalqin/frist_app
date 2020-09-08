@@ -3,8 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('form');
+    return view('calculator');
 });
 
 Route::get('/forms', 'formController@index');
 Route::post('/proses', 'formController@proses');
+
+Route::post('/calculator', 'CalculatorController@index');
