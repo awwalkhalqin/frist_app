@@ -8,12 +8,12 @@ class CalculatorController extends Controller
 {
     public function index(Request $request) 
     {
-        $ops = $request->input('operasi');
+        $oprasi = $request->input('operasi');
         $num1 = $request->input('ke1');
         $num2 = $request->input('ke2');
         $hasil = 0;
     
-        if ($ops == 'tambah') {
+        if ($oprasi == 'tambah') {
           $hasil = $num1 + $num2;
         }elseif ($opt == 'kurang') {
          $hasil = $num1 - $num2; 
