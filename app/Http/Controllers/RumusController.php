@@ -21,7 +21,7 @@ class RumusController extends Controller
       $jari = $request->input('jari');       
       $phi = 3.14;
 
-      $result = 4/3 * $phi * $jari * $jari * $finger;
+      $result = 4/3 * $phi * $jari * $jari * $jari;
       
       return redirect('/bola')->with('hasil','Volume Bola adalah: ' . $result);       
 
